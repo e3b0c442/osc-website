@@ -4,7 +4,7 @@ env:
 install:
   - wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - mkdir /tmp/hugo
-  - tar -C /tmp/hugo -xvfz /tmp/hugo.tar.gz
+  - tar xvfz /tmp/hugo.tar.gz -C /tmp/hugo
   - export PATH=$PATH:/tmp/hugo
 
 script:
